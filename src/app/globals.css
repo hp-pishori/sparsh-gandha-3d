@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #090807;
+    --bg-surface: #14100D;
+    --color-ivory: #F3EBDD;
+    --color-gold: #B49A6A;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--color-ivory);
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    selection-background-color: #B49A6A;
+    selection-color: #090807;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #B49A6A;
+    color: #090807;
+  }
+}
+
+/* Custom smooth luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090807;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a221b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B49A6A;
+}
+
+/* Luxury serif utilities */
+.font-editorial {
+  font-family: 'Cormorant Garamond', 'Cinzel', 'Playfair Display', 'Didot', 'Georgia', serif;
+}
+
+/* Shimmer gold text effect */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF6E5 0%, #D8C59A 35%, #B49A6A 70%, #856E42 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-subtle {
+  background: linear-gradient(135deg, #F3EBDD 20%, #B49A6A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Radial ambient vignettes */
+.luxury-vignette {
+  background: radial-gradient(circle at 50% 50%, rgba(9, 8, 7, 0) 55%, rgba(9, 8, 7, 0.85) 90%, #090807 100%);
+}
+
+.light-beam-glow {
+  background: radial-gradient(ellipse 50% 70% at 50% 25%, rgba(180, 154, 106, 0.12) 0%, rgba(89, 59, 42, 0.05) 50%, transparent 80%);
+}
