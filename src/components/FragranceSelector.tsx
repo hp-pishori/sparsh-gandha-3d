@@ -18,7 +18,7 @@ export const FragranceSelector: React.FC<FragranceSelectorProps> = ({
 }) => {
   return (
     <div
-      className={`inline-flex items-center p-1.5 rounded-full bg-[#14100D]/85 backdrop-blur-md border border-[#B49A6A]/25 shadow-[0_10px_35px_rgba(0,0,0,0.6)] ${className}`}
+      className={`inline-flex items-center p-1.5 rounded-full bg-[#090807]/90 backdrop-blur-xl border border-[#E5CA92]/30 shadow-[0_12px_40px_rgba(0,0,0,0.8)] ${className}`}
       role="tablist"
       aria-label="Select Fragrance"
     >
@@ -32,8 +32,8 @@ export const FragranceSelector: React.FC<FragranceSelectorProps> = ({
             onClick={() => onSelectFragrance(f)}
             className={`relative px-3.5 py-1.5 md:px-5 md:py-2 rounded-full text-[11px] md:text-xs uppercase tracking-[0.2em] transition-all duration-500 font-medium ${
               isSelected
-                ? "text-[#090807] bg-gradient-to-r from-[#F3EBDD] via-[#D8C59A] to-[#B49A6A] shadow-[0_2px_15px_rgba(180,154,106,0.35)]"
-                : "text-[#C4B5A2] hover:text-[#F3EBDD] hover:bg-white/5"
+                ? "text-[#090807] bg-gradient-to-r from-[#FAF6EE] via-[#EADBBA] to-[#CBB078] shadow-[0_2px_15px_rgba(180,154,106,0.4)] font-semibold"
+                : "text-[#C8BCAB] hover:text-[#FAF6EE] hover:bg-white/5"
             }`}
           >
             <span className="relative z-10">{f.shortName}</span>

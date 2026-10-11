@@ -50,15 +50,15 @@
   font-family: 'Cormorant Garamond', 'Cinzel', 'Playfair Display', 'Didot', 'Georgia', serif;
 }
 
-/* Shimmer gold text effect */
+/* Shimmer gold text effect - enhanced high contrast champagne gold */
 .text-gold-gradient {
-  background: linear-gradient(135deg, #FFF6E5 0%, #D8C59A 35%, #B49A6A 70%, #856E42 100%);
+  background: linear-gradient(135deg, #FFFDF8 0%, #F5E8C8 35%, #DCBF88 70%, #B89656 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gold-subtle {
-  background: linear-gradient(135deg, #F3EBDD 20%, #B49A6A 100%);
+  background: linear-gradient(135deg, #FAF6EE 20%, #DCBF88 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
